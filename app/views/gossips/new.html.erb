@@ -1,0 +1,20 @@
+<html>
+  <body>
+
+<p>Le 2ème form</p>
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+<%= label_tag 'Title' %>
+      <%= text_field_tag 'title', @gossip %>
+      <br /> <br />
+
+      <%= label_tag 'Content' %>
+      <%= text_area_tag 'content', @gossip %>
+      <br /> <br />
+
+<%= submit_tag "Create Post" %>
+
+<% end %>
+
+ </body>
+</html>
